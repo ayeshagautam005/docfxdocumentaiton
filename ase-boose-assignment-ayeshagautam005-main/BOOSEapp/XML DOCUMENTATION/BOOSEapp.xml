@@ -1,0 +1,566 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BOOSEapp</name>
+    </assembly>
+    <members>
+        <member name="T:BOOSEapp.AppCanvas">
+            <summary>
+            Implementation of the ICanvas interface that provides drawing functionality.
+            This class manages a bitmap canvas and handles basic drawing operations.
+            </summary>
+        </member>
+        <member name="P:BOOSEapp.AppCanvas.Xpos">
+            <summary>
+            Gets the current X coordinate of the drawing pen.
+            </summary>
+        </member>
+        <member name="P:BOOSEapp.AppCanvas.Ypos">
+            <summary>
+            Gets the current Y coordinate of the drawing pen.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.AppCanvas.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the AppCanvas class with the specified dimensions.
+            </summary>
+            <param name="width">The width of the canvas in pixels.</param>
+            <param name="height">The height of the canvas in pixels.</param>
+            <exception cref="T:BOOSEapp.CanvasException">Thrown when width or height are less than or equal to zero.</exception>
+        </member>
+        <member name="M:BOOSEapp.AppCanvas.MoveTo(System.Int32,System.Int32)">
+            <summary>
+            Moves the drawing pen to the specified coordinates without drawing.
+            </summary>
+            <param name="x">The X coordinate to move to.</param>
+            <param name="y">The Y coordinate to move to.</param>
+            <exception cref="T:BOOSEapp.CanvasException">Thrown when coordinates are out of canvas bounds.</exception>
+        </member>
+        <member name="M:BOOSEapp.AppCanvas.DrawTo(System.Int32,System.Int32)">
+            <summary>
+            Draws a line from the current pen position to the specified coordinates.
+            </summary>
+            <param name="x">The destination X coordinate.</param>
+            <param name="y">The destination Y coordinate.</param>
+            <exception cref="T:BOOSEapp.CanvasException">Thrown when coordinates are out of canvas bounds.</exception>
+        </member>
+        <member name="M:BOOSEapp.AppCanvas.DrawCircle(System.Int32)">
+            <summary>
+            Draws a circle with the specified radius at the current pen position.
+            </summary>
+            <param name="radius">The radius of the circle to draw.</param>
+            <exception cref="T:BOOSEapp.CanvasException">Thrown when radius is invalid or circle exceeds canvas bounds.</exception>
+        </member>
+        <member name="M:BOOSEapp.AppCanvas.DrawRectangle(System.Int32,System.Int32)">
+            <summary>
+            Draws a rectangle with the specified dimensions at the current pen position.
+            </summary>
+            <param name="width">The width of the rectangle.</param>
+            <param name="height">The height of the rectangle.</param>
+            <exception cref="T:BOOSEapp.CanvasException">Thrown when dimensions are invalid or rectangle exceeds canvas bounds.</exception>
+        </member>
+        <member name="M:BOOSEapp.AppCanvas.SetPenColor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Sets the color of the drawing pen.
+            </summary>
+            <param name="r">The red component (0-255).</param>
+            <param name="g">The green component (0-255).</param>
+            <param name="b">The blue component (0-255).</param>
+            <exception cref="T:BOOSEapp.CanvasException">Thrown when color values are outside the valid range (0-255).</exception>
+        </member>
+        <member name="M:BOOSEapp.AppCanvas.WriteText(System.String)">
+            <summary>
+            Writes text at the current pen position.
+            </summary>
+            <param name="text">The text to write.</param>
+            <exception cref="T:BOOSEapp.CanvasException">Thrown when text position is out of canvas bounds.</exception>
+        </member>
+        <member name="M:BOOSEapp.AppCanvas.Clear">
+            <summary>
+            Clears the canvas and resets the pen position to the origin (0,0).
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.AppCanvas.GetBitmap">
+            <summary>
+            Gets a bitmap representation of the current canvas state.
+            </summary>
+            <returns>A Bitmap object containing the drawn image.</returns>
+        </member>
+        <member name="M:BOOSEapp.AppCanvas.Circle(System.Int32,System.Boolean)">
+            <summary>
+            Draws a circle (alias for DrawCircle, used in unit tests).
+            </summary>
+            <param name="radius">The radius of the circle.</param>
+            <param name="fill">Whether to fill the circle (not implemented in basic version).</param>
+        </member>
+        <member name="M:BOOSEapp.AppCanvas.Rect(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Draws a rectangle (alias for DrawRectangle, used in unit tests).
+            </summary>
+            <param name="width">The width of the rectangle.</param>
+            <param name="height">The height of the rectangle.</param>
+            <param name="fill">Whether to fill the rectangle (not implemented in basic version).</param>
+        </member>
+        <member name="M:BOOSEapp.AppCanvas.SetColour(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Sets the pen color (alias for SetPenColor, used in unit tests).
+            </summary>
+            <param name="r">The red component (0-255).</param>
+            <param name="g">The green component (0-255).</param>
+            <param name="b">The blue component (0-255).</param>
+        </member>
+        <member name="M:BOOSEapp.AppCanvas.Reset">
+            <summary>
+            Resets the pen position to the origin (0,0) without clearing the canvas.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.AppCanvas.getBitmap">
+            <summary>
+            Gets a bitmap representation of the current canvas state (alias for GetBitmap).
+            </summary>
+            <returns>A Bitmap object containing the drawn image.</returns>
+        </member>
+        <member name="M:BOOSEapp.AppCanvas.Dispose">
+            <summary>
+            Releases all resources used by the AppCanvas.
+            </summary>
+        </member>
+        <member name="T:BOOSEapp.AppCircle">
+            <summary>
+            Command class for drawing circles on a canvas.
+            Implements the ICommand interface to encapsulate circle drawing operations.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.AppCircle.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the AppCircle class with the specified radius.
+            </summary>
+            <param name="radius">The radius of the circle to draw.</param>
+            <exception cref="T:System.ArgumentException">Thrown when radius is less than or equal to zero.</exception>
+        </member>
+        <member name="M:BOOSEapp.AppCircle.Execute(BOOSEapp.ICanvas)">
+            <summary>
+            Executes the circle drawing command on the specified canvas.
+            </summary>
+            <param name="canvas">The canvas to draw the circle on.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when canvas is null.</exception>
+            <exception cref="T:BOOSEapp.CanvasException">Thrown when the circle cannot be drawn (e.g., invalid radius or out of bounds).</exception>
+        </member>
+        <member name="M:BOOSEapp.AppCircle.ToString">
+            <summary>
+            Returns a string representation of the circle command.
+            </summary>
+            <returns>A string containing the radius of the circle.</returns>
+        </member>
+        <member name="T:BOOSEapp.AppCommandFactory">
+            <summary>
+            Factory class responsible for creating command objects
+            based on a given input command line string. 
+            Supports commands such as moveto, drawto, circle, rectangle,
+            pen color changes, reset, clear, and write text.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.AppCommandFactory.CreateCommand(System.String)">
+            <summary>
+            Creates an <see cref="T:BOOSEapp.ICommand"/> instance based on the parsed command string.
+            </summary>
+            <param name="commandLine">
+            The raw user input command containing the command keyword and its parameters.
+            </param>
+            <returns>
+            A concrete <see cref="T:BOOSEapp.ICommand"/> object matching the command string,
+            or <c>null</c> if the command is invalid or cannot be parsed.
+            </returns>
+            <exception cref="T:BOOSEapp.CanvasException">
+            Thrown when an unexpected error occurs during command parsing or object creation.
+            </exception>
+        </member>
+        <member name="T:BOOSEapp.AppDrawTo">
+            <summary>
+            Command class for drawing a line to a specified position.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.AppDrawTo.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the AppDrawTo class.
+            </summary>
+            <param name="x">The destination X coordinate.</param>
+            <param name="y">The destination Y coordinate.</param>
+        </member>
+        <member name="M:BOOSEapp.AppDrawTo.Execute(BOOSEapp.ICanvas)">
+            <summary>
+            Executes the draw-to command on the specified canvas.
+            </summary>
+            <param name="canvas">The canvas to execute the command on.</param>
+        </member>
+        <member name="M:BOOSEapp.AppDrawTo.ToString">
+            <summary>
+            Returns a string representation of the draw-to command.
+            </summary>
+            <returns>A string containing the destination coordinates.</returns>
+        </member>
+        <member name="T:BOOSEapp.AppMoveTo">
+            <summary>
+            Command class for moving the drawing pen to a specified position.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.AppMoveTo.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the AppMoveTo class.
+            </summary>
+            <param name="x">The X coordinate to move to.</param>
+            <param name="y">The Y coordinate to move to.</param>
+        </member>
+        <member name="M:BOOSEapp.AppMoveTo.Execute(BOOSEapp.ICanvas)">
+            <summary>
+            Executes the move command on the specified canvas.
+            </summary>
+            <param name="canvas">The canvas to execute the command on.</param>
+        </member>
+        <member name="M:BOOSEapp.AppMoveTo.ToString">
+            <summary>
+            Returns a string representation of the move command.
+            </summary>
+            <returns>A string containing the destination coordinates.</returns>
+        </member>
+        <member name="T:BOOSEapp.AppParser">
+            <summary>
+            Parses lines of text into a list of executable <see cref="T:BOOSEapp.ICommand"/> objects
+            using the provided <see cref="T:BOOSEapp.AppCommandFactory"/>.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.AppParser.#ctor(BOOSEapp.AppCommandFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BOOSEapp.AppParser"/> class.
+            </summary>
+            <param name="factory">
+            The <see cref="T:BOOSEapp.AppCommandFactory"/> responsible for creating command objects.
+            </param>
+        </member>
+        <member name="M:BOOSEapp.AppParser.ParseCommands(System.String[])">
+            <summary>
+            Parses an array of command lines into a list of <see cref="T:BOOSEapp.ICommand"/> objects.
+            Ignores blank lines and lines beginning with '*'.
+            </summary>
+            <param name="commands">
+            An array of raw command strings to be parsed.
+            </param>
+            <returns>
+            A list of successfully parsed <see cref="T:BOOSEapp.ICommand"/> instances.
+            </returns>
+            <exception cref="T:BOOSEapp.CanvasException">
+            Thrown when an error occurs while parsing an individual command line.
+            </exception>
+        </member>
+        <member name="T:BOOSEapp.AppRectangle">
+            <summary>
+            Command class for drawing rectangles on a canvas.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.AppRectangle.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the AppRectangle class.
+            </summary>
+            <param name="width">The width of the rectangle.</param>
+            <param name="height">The height of the rectangle.</param>
+            <exception cref="T:System.ArgumentException">Thrown when width or height are less than or equal to zero.</exception>
+        </member>
+        <member name="M:BOOSEapp.AppRectangle.Execute(BOOSEapp.ICanvas)">
+            <summary>
+            Executes the rectangle drawing command on the specified canvas.
+            </summary>
+            <param name="canvas">The canvas to draw the rectangle on.</param>
+        </member>
+        <member name="M:BOOSEapp.AppRectangle.ToString">
+            <summary>
+            Returns a string representation of the rectangle command.
+            </summary>
+            <returns>A string containing the rectangle dimensions.</returns>
+        </member>
+        <member name="T:BOOSEapp.CanvasException">
+            <summary>
+            Exception thrown when an error occurs during canvas operations.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.CanvasException.#ctor">
+            <summary>
+            Initializes a new instance of the CanvasException class.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.CanvasException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the CanvasException class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:BOOSEapp.CanvasException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the CanvasException class with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="inner">The exception that is the cause of the current exception.</param>
+        </member>
+        <member name="T:BOOSEapp.ClearCommand">
+            <summary>
+            Represents a command that clears all drawings from the canvas.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.ClearCommand.Execute(BOOSEapp.ICanvas)">
+            <summary>
+            Executes the clear operation on the specified canvas.
+            </summary>
+            <param name="canvas">
+            The canvas on which the clear action will be performed.
+            </param>
+        </member>
+        <member name="F:BOOSEapp.Form1.components">
+            <summary>
+             Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.Form1.Dispose(System.Boolean)">
+            <summary>
+             Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BOOSEapp.Form1.InitializeComponent">
+            <summary>
+             Required method for Designer support - do not modify
+             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:BOOSEapp.ICanvas">
+            <summary>
+            Defines the basic drawing operations supported by a canvas,
+            including movement, drawing shapes, setting pen color, writing text,
+            and retrieving the rendered bitmap.
+            </summary>
+        </member>
+        <member name="P:BOOSEapp.ICanvas.Xpos">
+            <summary>
+            Gets the current X-coordinate of the drawing cursor.
+            </summary>
+        </member>
+        <member name="P:BOOSEapp.ICanvas.Ypos">
+            <summary>
+            Gets the current Y-coordinate of the drawing cursor.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.ICanvas.MoveTo(System.Int32,System.Int32)">
+            <summary>
+            Moves the drawing cursor to a specified coordinate without drawing.
+            </summary>
+            <param name="x">The target X-coordinate.</param>
+            <param name="y">The target Y-coordinate.</param>
+        </member>
+        <member name="M:BOOSEapp.ICanvas.DrawTo(System.Int32,System.Int32)">
+            <summary>
+            Draws a line from the current cursor position to the specified coordinate.
+            </summary>
+            <param name="x">The destination X-coordinate.</param>
+            <param name="y">The destination Y-coordinate.</param>
+        </member>
+        <member name="M:BOOSEapp.ICanvas.DrawCircle(System.Int32)">
+            <summary>
+            Draws a circle with the specified radius at the current cursor position.
+            </summary>
+            <param name="radius">The radius of the circle.</param>
+        </member>
+        <member name="M:BOOSEapp.ICanvas.DrawRectangle(System.Int32,System.Int32)">
+            <summary>
+            Draws a rectangle with the specified width and height
+            starting at the current cursor position.
+            </summary>
+            <param name="width">The width of the rectangle.</param>
+            <param name="height">The height of the rectangle.</param>
+        </member>
+        <member name="M:BOOSEapp.ICanvas.SetPenColor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Sets the pen color used for subsequent drawing operations.
+            </summary>
+            <param name="r">The red component (0–255).</param>
+            <param name="g">The green component (0–255).</param>
+            <param name="b">The blue component (0–255).</param>
+        </member>
+        <member name="M:BOOSEapp.ICanvas.WriteText(System.String)">
+            <summary>
+            Writes text at the current cursor position.
+            </summary>
+            <param name="text">The text to be drawn on the canvas.</param>
+        </member>
+        <member name="M:BOOSEapp.ICanvas.Clear">
+            <summary>
+            Clears the canvas and resets its content.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.ICanvas.GetBitmap">
+            <summary>
+            Retrieves the current bitmap representation of the canvas.
+            </summary>
+            <returns>A <see cref="T:System.Drawing.Bitmap"/> containing the rendered content.</returns>
+        </member>
+        <member name="T:BOOSEapp.ICommand">
+            <summary>
+            Interface for command objects in the drawing program.
+            Follows the Command pattern to encapsulate drawing operations.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)">
+            <summary>
+            Executes the command on the specified canvas.
+            </summary>
+            <param name="canvas">The canvas to execute the command on.</param>
+        </member>
+        <member name="T:BOOSEapp.MainForm">
+            <summary>
+            Main form for the BOOSE Drawing Application.
+            Provides a graphical user interface for entering drawing commands,
+            executing them, and viewing the results on a canvas.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.MainForm.#ctor">
+            <summary>
+            Initializes a new instance of the MainForm class.
+            Sets up the canvas, picture box, and displays library information.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.MainForm.InitializeCanvas">
+            <summary>
+            Initializes the drawing canvas with the specified dimensions
+            and sets up the picture box for displaying the canvas.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.MainForm.DisplayAboutInfo">
+            <summary>
+            Displays information about the BOOSE library in the output text box
+            and writes it to the debug window.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.MainForm.RefreshCanvas">
+            <summary>
+            Refreshes the canvas display by updating the picture box
+            with the current canvas bitmap.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.MainForm.ExecuteButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for the Execute button click.
+            Executes the drawing program entered in the program text box
+            and displays the results or any errors encountered.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:BOOSEapp.MainForm.ExecuteProgram(System.String)">
+            <summary>
+            Executes a drawing program by parsing and processing each line.
+            </summary>
+            <param name="programText">The text of the drawing program to execute.</param>
+            <exception cref="T:BOOSEapp.CanvasException">Thrown when a command cannot be executed.</exception>
+        </member>
+        <member name="M:BOOSEapp.MainForm.ProcessCommand(System.String)">
+            <summary>
+            Processes a single drawing command by parsing it and executing
+            the corresponding canvas operation.
+            </summary>
+            <param name="commandLine">The command line to process.</param>
+            <exception cref="T:BOOSEapp.CanvasException">Thrown when the command is invalid or cannot be parsed.</exception>
+        </member>
+        <member name="M:BOOSEapp.MainForm.ClearCanvasButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for the Clear Canvas button click.
+            Clears the canvas and refreshes the display.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:BOOSEapp.MainForm.ClearOutputButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for the Clear Output button click.
+            Clears the output text box and redisplays the about information.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:BOOSEapp.MainForm.MainForm_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+            <summary>
+            Clean up any resources being used.
+            This method is called when the form is closing.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.MainForm.CleanupResources">
+            <summary>
+            Cleans up managed resources used by the form.
+            Disposes of the canvas and picture box image to prevent memory leaks.
+            </summary>
+        </member>
+        <member name="T:BOOSEapp.Program">
+            <summary>
+            The main entry point for the BOOSE Drawing Application.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:BOOSEapp.ResetCommand">
+            <summary>
+            Represents a command that resets the canvas state.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.ResetCommand.Execute(BOOSEapp.ICanvas)">
+            <summary>
+            Executes the reset operation on the canvas.
+            If the canvas is an AppCanvas, its state is reset.
+            </summary>
+            <param name="canvas">The canvas on which the reset action is performed.</param>
+        </member>
+        <member name="T:BOOSEapp.SetPenColorCommand">
+            <summary>
+            Command class for setting the pen color.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.SetPenColorCommand.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the SetPenColorCommand class.
+            </summary>
+            <param name="r">The red component (0-255).</param>
+            <param name="g">The green component (0-255).</param>
+            <param name="b">The blue component (0-255).</param>
+            <exception cref="T:System.ArgumentException">Thrown when any color component is outside the range 0-255.</exception>
+        </member>
+        <member name="M:BOOSEapp.SetPenColorCommand.Execute(BOOSEapp.ICanvas)">
+            <summary>
+            Executes the pen color command on the specified canvas.
+            </summary>
+            <param name="canvas">The canvas to set the pen color on.</param>
+        </member>
+        <member name="M:BOOSEapp.SetPenColorCommand.ToString">
+            <summary>
+            Returns a string representation of the pen color command.
+            </summary>
+            <returns>A string containing the RGB values.</returns>
+        </member>
+        <member name="T:BOOSEapp.WriteTextCommand">
+            <summary>
+            Represents a command that writes text onto the canvas.
+            </summary>
+        </member>
+        <member name="M:BOOSEapp.WriteTextCommand.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BOOSEapp.WriteTextCommand"/> class
+            with the specified text to be written.
+            </summary>
+            <param name="text">The text to write on the canvas.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the text is null.</exception>
+        </member>
+        <member name="M:BOOSEapp.WriteTextCommand.Execute(BOOSEapp.ICanvas)">
+            <summary>
+            Executes the write text operation on the canvas.
+            </summary>
+            <param name="canvas">The canvas on which the text will be written.</param>
+        </member>
+    </members>
+</doc>
