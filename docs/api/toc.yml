@@ -1,0 +1,79 @@
+### YamlMime:TableOfContent
+items:
+- uid: BOOSEapp
+  name: BOOSEapp
+  type: Namespace
+  items:
+  - uid: BOOSEapp.AppArray
+    name: AppArray
+    type: Class
+  - uid: BOOSEapp.AppCanvas
+    name: AppCanvas
+    type: Class
+  - uid: BOOSEapp.AppCircle
+    name: AppCircle
+    type: Class
+  - uid: BOOSEapp.AppCommandFactory
+    name: AppCommandFactory
+    type: Class
+  - uid: BOOSEapp.AppDrawTo
+    name: AppDrawTo
+    type: Class
+  - uid: BOOSEapp.AppFor
+    name: AppFor
+    type: Class
+  - uid: BOOSEapp.AppIf
+    name: AppIf
+    type: Class
+  - uid: BOOSEapp.AppInt
+    name: AppInt
+    type: Class
+  - uid: BOOSEapp.AppMethod
+    name: AppMethod
+    type: Class
+  - uid: BOOSEapp.AppMoveTo
+    name: AppMoveTo
+    type: Class
+  - uid: BOOSEapp.AppParser
+    name: AppParser
+    type: Class
+  - uid: BOOSEapp.AppReal
+    name: AppReal
+    type: Class
+  - uid: BOOSEapp.AppRectangle
+    name: AppRectangle
+    type: Class
+  - uid: BOOSEapp.AppWhile
+    name: AppWhile
+    type: Class
+  - uid: BOOSEapp.CanvasException
+    name: CanvasException
+    type: Class
+  - uid: BOOSEapp.ClearCommand
+    name: ClearCommand
+    type: Class
+  - uid: BOOSEapp.ICanvas
+    name: ICanvas
+    type: Interface
+  - uid: BOOSEapp.ICommand
+    name: ICommand
+    type: Interface
+  - uid: BOOSEapp.ICommandParser
+    name: ICommandParser
+    type: Interface
+  - uid: BOOSEapp.MainForm
+    name: MainForm
+    type: Class
+  - uid: BOOSEapp.MethodInfo
+    name: MethodInfo
+    type: Class
+  - uid: BOOSEapp.ResetCommand
+    name: ResetCommand
+    type: Class
+  - uid: BOOSEapp.SetPenColorCommand
+    name: SetPenColorCommand
+    type: Class
+  - uid: BOOSEapp.WriteTextCommand
+    name: WriteTextCommand
+    type: Class
+memberLayout: SamePage

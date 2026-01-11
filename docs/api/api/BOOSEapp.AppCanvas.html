@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AppCanvas | BOOSEapp Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AppCanvas | BOOSEapp Documentation ">
+      
+      <meta name="description" content="Represents a drawing surface that implements the  interface. Provides methods for drawing shapes, lines, and text.">
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/new/main/apiSpec/new?filename=BOOSEapp_AppCanvas.md&amp;value=---%0Auid%3A%20BOOSEapp.AppCanvas%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="BOOSEapp Docs">
+            BOOSEapp Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="BOOSEapp.AppCanvas">
+
+
+
+  <h1 id="BOOSEapp_AppCanvas" data-uid="BOOSEapp.AppCanvas" class="text-break">
+Class AppCanvas  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BOOSEapp.html">BOOSEapp</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BOOSEapp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a drawing surface that implements the <a class="xref" href="BOOSEapp.ICanvas.html">ICanvas</a> interface.
+Provides methods for drawing shapes, lines, and text.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AppCanvas : ICanvas, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AppCanvas</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="BOOSEapp.ICanvas.html">ICanvas</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="BOOSEapp_AppCanvas__ctor_" data-uid="BOOSEapp.AppCanvas.#ctor*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas__ctor_System_Int32_System_Int32_" data-uid="BOOSEapp.AppCanvas.#ctor(System.Int32,System.Int32)">
+  AppCanvas(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="BOOSEapp.AppCanvas.html">AppCanvas</a> class with the specified dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppCanvas(int width, int height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width of the canvas in pixels.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height of the canvas in pixels.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BOOSEapp.CanvasException.html">CanvasException</a></dt>
+    <dd><p>Thrown when the provided width or height is less than or equal to zero.</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="BOOSEapp_AppCanvas_Xpos_" data-uid="BOOSEapp.AppCanvas.Xpos*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas_Xpos" data-uid="BOOSEapp.AppCanvas.Xpos">
+  Xpos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current X-coordinate of the pen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Xpos { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_AppCanvas_Ypos_" data-uid="BOOSEapp.AppCanvas.Ypos*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas_Ypos" data-uid="BOOSEapp.AppCanvas.Ypos">
+  Ypos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current Y-coordinate of the pen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Ypos { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="BOOSEapp_AppCanvas_Circle_" data-uid="BOOSEapp.AppCanvas.Circle*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas_Circle_System_Int32_System_Boolean_" data-uid="BOOSEapp.AppCanvas.Circle(System.Int32,System.Boolean)">
+  Circle(int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a circle at the current position, optionally filled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Circle(int radius, bool fill = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The radius of the circle.</p>
+</dd>
+    <dt><code>fill</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, fills the circle with the current brush color.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_AppCanvas_Clear_" data-uid="BOOSEapp.AppCanvas.Clear*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas_Clear" data-uid="BOOSEapp.AppCanvas.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the canvas and resets the pen position and color to default values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_AppCanvas_Dispose_" data-uid="BOOSEapp.AppCanvas.Dispose*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas_Dispose" data-uid="BOOSEapp.AppCanvas.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Releases all resources used by the <a class="xref" href="BOOSEapp.AppCanvas.html">AppCanvas</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_AppCanvas_DrawCircle_" data-uid="BOOSEapp.AppCanvas.DrawCircle*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas_DrawCircle_System_Int32_" data-uid="BOOSEapp.AppCanvas.DrawCircle(System.Int32)">
+  DrawCircle(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a circle centered at the current position with the specified radius.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawCircle(int radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The radius of the circle.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BOOSEapp.CanvasException.html">CanvasException</a></dt>
+    <dd><p>Thrown when the radius is invalid or the circle exceeds canvas boundaries.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BOOSEapp_AppCanvas_DrawRectangle_" data-uid="BOOSEapp.AppCanvas.DrawRectangle*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas_DrawRectangle_System_Int32_System_Int32_" data-uid="BOOSEapp.AppCanvas.DrawRectangle(System.Int32,System.Int32)">
+  DrawRectangle(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a rectangle starting from the current position with the specified dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawRectangle(int width, int height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width of the rectangle.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height of the rectangle.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BOOSEapp.CanvasException.html">CanvasException</a></dt>
+    <dd><p>Thrown when the specified dimensions are invalid.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BOOSEapp_AppCanvas_DrawTo_" data-uid="BOOSEapp.AppCanvas.DrawTo*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas_DrawTo_System_Int32_System_Int32_" data-uid="BOOSEapp.AppCanvas.DrawTo(System.Int32,System.Int32)">
+  DrawTo(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a straight line from the current position to the specified coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTo(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The X-coordinate of the line end point.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The Y-coordinate of the line end point.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BOOSEapp.CanvasException.html">CanvasException</a></dt>
+    <dd><p>Thrown when the coordinates are outside the canvas bounds.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BOOSEapp_AppCanvas_GetBitmap_" data-uid="BOOSEapp.AppCanvas.GetBitmap*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas_GetBitmap" data-uid="BOOSEapp.AppCanvas.GetBitmap">
+  GetBitmap()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a copy of the current canvas bitmap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bitmap GetBitmap()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a></dt>
+    <dd><p>A clone of the current <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a> representing the drawing surface.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_AppCanvas_MoveTo_" data-uid="BOOSEapp.AppCanvas.MoveTo*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas_MoveTo_System_Int32_System_Int32_" data-uid="BOOSEapp.AppCanvas.MoveTo(System.Int32,System.Int32)">
+  MoveTo(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves the pen to the specified coordinates without drawing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveTo(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The X-coordinate to move the pen to.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The Y-coordinate to move the pen to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BOOSEapp.CanvasException.html">CanvasException</a></dt>
+    <dd><p>Thrown when the provided coordinates are outside the canvas bounds.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BOOSEapp_AppCanvas_Rect_" data-uid="BOOSEapp.AppCanvas.Rect*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas_Rect_System_Int32_System_Int32_System_Boolean_" data-uid="BOOSEapp.AppCanvas.Rect(System.Int32,System.Int32,System.Boolean)">
+  Rect(int, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a rectangle at the current position, optionally filled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rect(int width, int height, bool fill = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width of the rectangle.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height of the rectangle.</p>
+</dd>
+    <dt><code>fill</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, fills the rectangle with the current brush color.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_AppCanvas_Reset_" data-uid="BOOSEapp.AppCanvas.Reset*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas_Reset" data-uid="BOOSEapp.AppCanvas.Reset">
+  Reset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets the pen position to the origin (0,0).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_AppCanvas_SetColour_" data-uid="BOOSEapp.AppCanvas.SetColour*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas_SetColour_System_Int32_System_Int32_System_Int32_" data-uid="BOOSEapp.AppCanvas.SetColour(System.Int32,System.Int32,System.Int32)">
+  SetColour(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the pen color using RGB values (alias for <a class="xref" href="BOOSEapp.AppCanvas.html#BOOSEapp_AppCanvas_SetPenColor_System_Int32_System_Int32_System_Int32_">SetPenColor(int, int, int)</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColour(int r, int g, int b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Red component (0–255).</p>
+</dd>
+    <dt><code>g</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Green component (0–255).</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Blue component (0–255).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_AppCanvas_SetPenColor_" data-uid="BOOSEapp.AppCanvas.SetPenColor*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas_SetPenColor_System_Int32_System_Int32_System_Int32_" data-uid="BOOSEapp.AppCanvas.SetPenColor(System.Int32,System.Int32,System.Int32)">
+  SetPenColor(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the pen and brush color using RGB values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPenColor(int r, int g, int b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Red component (0–255).</p>
+</dd>
+    <dt><code>g</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Green component (0–255).</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Blue component (0–255).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BOOSEapp.CanvasException.html">CanvasException</a></dt>
+    <dd><p>Thrown when any RGB value is outside the valid range.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BOOSEapp_AppCanvas_WriteText_" data-uid="BOOSEapp.AppCanvas.WriteText*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas_WriteText_System_String_" data-uid="BOOSEapp.AppCanvas.WriteText(System.String)">
+  WriteText(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws the specified text at the current pen position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteText(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text string to draw.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_AppCanvas_getBitmap_" data-uid="BOOSEapp.AppCanvas.getBitmap*"></a>
+
+  <h3 id="BOOSEapp_AppCanvas_getBitmap" data-uid="BOOSEapp.AppCanvas.getBitmap">
+  getBitmap()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a copy of the current bitmap (lowercase alias for <a class="xref" href="BOOSEapp.AppCanvas.html#BOOSEapp_AppCanvas_GetBitmap">GetBitmap()</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bitmap getBitmap()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a></dt>
+    <dd><p>A clone of the current <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/AppCanvas.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Source on <a href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/tree/main">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEapp.ICommandParser
+  commentId: T:BOOSEapp.ICommandParser
+  id: ICommandParser
+  parent: BOOSEapp
+  children:
+  - BOOSEapp.ICommandParser.ParseCommands(System.String[])
+  langs:
+  - csharp
+  - vb
+  name: ICommandParser
+  nameWithType: ICommandParser
+  fullName: BOOSEapp.ICommandParser
+  type: Interface
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/AppParser.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: ICommandParser
+    path: ../AppParser.cs
+    startLine: 8
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Defines a contract for parsing textual commands into executable command objects.
+  example: []
+  syntax:
+    content: public interface ICommandParser
+    content.vb: Public Interface ICommandParser
+- uid: BOOSEapp.ICommandParser.ParseCommands(System.String[])
+  commentId: M:BOOSEapp.ICommandParser.ParseCommands(System.String[])
+  id: ParseCommands(System.String[])
+  parent: BOOSEapp.ICommandParser
+  langs:
+  - csharp
+  - vb
+  name: ParseCommands(string[])
+  nameWithType: ICommandParser.ParseCommands(string[])
+  fullName: BOOSEapp.ICommandParser.ParseCommands(string[])
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/AppParser.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: ParseCommands
+    path: ../AppParser.cs
+    startLine: 15
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Parses an array of command strings into a list of <xref href="BOOSEapp.ICommand" data-throw-if-not-resolved="false"></xref> instances.
+  example: []
+  syntax:
+    content: List<ICommand> ParseCommands(string[] commands)
+    parameters:
+    - id: commands
+      type: System.String[]
+      description: An array of command strings to parse.
+    return:
+      type: System.Collections.Generic.List{BOOSEapp.ICommand}
+      description: A list of parsed <xref href="BOOSEapp.ICommand" data-throw-if-not-resolved="false"></xref> objects.
+    content.vb: Function ParseCommands(commands As String()) As List(Of ICommand)
+  overload: BOOSEapp.ICommandParser.ParseCommands*
+  nameWithType.vb: ICommandParser.ParseCommands(String())
+  fullName.vb: BOOSEapp.ICommandParser.ParseCommands(String())
+  name.vb: ParseCommands(String())
+references:
+- uid: BOOSEapp
+  commentId: N:BOOSEapp
+  href: BOOSEapp.html
+  name: BOOSEapp
+  nameWithType: BOOSEapp
+  fullName: BOOSEapp
+- uid: BOOSEapp.ICommand
+  commentId: T:BOOSEapp.ICommand
+  parent: BOOSEapp
+  href: BOOSEapp.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: BOOSEapp.ICommand
+- uid: BOOSEapp.ICommandParser.ParseCommands*
+  commentId: Overload:BOOSEapp.ICommandParser.ParseCommands
+  href: BOOSEapp.ICommandParser.html#BOOSEapp_ICommandParser_ParseCommands_System_String___
+  name: ParseCommands
+  nameWithType: ICommandParser.ParseCommands
+  fullName: BOOSEapp.ICommandParser.ParseCommands
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.List{BOOSEapp.ICommand}
+  commentId: T:System.Collections.Generic.List{BOOSEapp.ICommand}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ICommand>
+  nameWithType: List<ICommand>
+  fullName: System.Collections.Generic.List<BOOSEapp.ICommand>
+  nameWithType.vb: List(Of ICommand)
+  fullName.vb: System.Collections.Generic.List(Of BOOSEapp.ICommand)
+  name.vb: List(Of ICommand)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: BOOSEapp.ICommand
+    name: ICommand
+    href: BOOSEapp.ICommand.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BOOSEapp.ICommand
+    name: ICommand
+    href: BOOSEapp.ICommand.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "..",
+          "files": [
+            "**/BOOSEapp.csproj"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "index.md",
+          "toc.yml",
+          "docs/**.md"
+        ]
+      },
+      {
+        "files": [
+          "api/**.yml"
+        ],
+        "dest": "api"
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "dest": "../docs",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appName": "BOOSEapp Docs",
+      "_appTitle": "BOOSEapp Documentation",    
+      "_enableSearch": true,
+      "pdf": true,
+     "_appFooter": "Source on <a href=\"https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/tree/main\">GitHub</a>"
+    }
+  }
+}

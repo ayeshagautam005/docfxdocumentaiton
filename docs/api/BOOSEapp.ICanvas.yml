@@ -1,0 +1,517 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEapp.ICanvas
+  commentId: T:BOOSEapp.ICanvas
+  id: ICanvas
+  parent: BOOSEapp
+  children:
+  - BOOSEapp.ICanvas.Clear
+  - BOOSEapp.ICanvas.DrawCircle(System.Int32)
+  - BOOSEapp.ICanvas.DrawRectangle(System.Int32,System.Int32)
+  - BOOSEapp.ICanvas.DrawTo(System.Int32,System.Int32)
+  - BOOSEapp.ICanvas.GetBitmap
+  - BOOSEapp.ICanvas.MoveTo(System.Int32,System.Int32)
+  - BOOSEapp.ICanvas.SetPenColor(System.Int32,System.Int32,System.Int32)
+  - BOOSEapp.ICanvas.WriteText(System.String)
+  - BOOSEapp.ICanvas.Xpos
+  - BOOSEapp.ICanvas.Ypos
+  langs:
+  - csharp
+  - vb
+  name: ICanvas
+  nameWithType: ICanvas
+  fullName: BOOSEapp.ICanvas
+  type: Interface
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/ICanvas.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: ICanvas
+    path: ../ICanvas.cs
+    startLine: 5
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Defines a contract for drawing operations on a canvas.
+  example: []
+  syntax:
+    content: public interface ICanvas
+    content.vb: Public Interface ICanvas
+- uid: BOOSEapp.ICanvas.Xpos
+  commentId: P:BOOSEapp.ICanvas.Xpos
+  id: Xpos
+  parent: BOOSEapp.ICanvas
+  langs:
+  - csharp
+  - vb
+  name: Xpos
+  nameWithType: ICanvas.Xpos
+  fullName: BOOSEapp.ICanvas.Xpos
+  type: Property
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/ICanvas.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: Xpos
+    path: ../ICanvas.cs
+    startLine: 10
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Gets the current X-coordinate of the pen.
+  example: []
+  syntax:
+    content: int Xpos { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Xpos As Integer
+  overload: BOOSEapp.ICanvas.Xpos*
+- uid: BOOSEapp.ICanvas.Ypos
+  commentId: P:BOOSEapp.ICanvas.Ypos
+  id: Ypos
+  parent: BOOSEapp.ICanvas
+  langs:
+  - csharp
+  - vb
+  name: Ypos
+  nameWithType: ICanvas.Ypos
+  fullName: BOOSEapp.ICanvas.Ypos
+  type: Property
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/ICanvas.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: Ypos
+    path: ../ICanvas.cs
+    startLine: 15
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Gets the current Y-coordinate of the pen.
+  example: []
+  syntax:
+    content: int Ypos { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Ypos As Integer
+  overload: BOOSEapp.ICanvas.Ypos*
+- uid: BOOSEapp.ICanvas.MoveTo(System.Int32,System.Int32)
+  commentId: M:BOOSEapp.ICanvas.MoveTo(System.Int32,System.Int32)
+  id: MoveTo(System.Int32,System.Int32)
+  parent: BOOSEapp.ICanvas
+  langs:
+  - csharp
+  - vb
+  name: MoveTo(int, int)
+  nameWithType: ICanvas.MoveTo(int, int)
+  fullName: BOOSEapp.ICanvas.MoveTo(int, int)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/ICanvas.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: MoveTo
+    path: ../ICanvas.cs
+    startLine: 22
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Moves the pen to the specified coordinates without drawing.
+  example: []
+  syntax:
+    content: void MoveTo(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: The X-coordinate to move the pen to.
+    - id: y
+      type: System.Int32
+      description: The Y-coordinate to move the pen to.
+    content.vb: Sub MoveTo(x As Integer, y As Integer)
+  overload: BOOSEapp.ICanvas.MoveTo*
+  nameWithType.vb: ICanvas.MoveTo(Integer, Integer)
+  fullName.vb: BOOSEapp.ICanvas.MoveTo(Integer, Integer)
+  name.vb: MoveTo(Integer, Integer)
+- uid: BOOSEapp.ICanvas.DrawTo(System.Int32,System.Int32)
+  commentId: M:BOOSEapp.ICanvas.DrawTo(System.Int32,System.Int32)
+  id: DrawTo(System.Int32,System.Int32)
+  parent: BOOSEapp.ICanvas
+  langs:
+  - csharp
+  - vb
+  name: DrawTo(int, int)
+  nameWithType: ICanvas.DrawTo(int, int)
+  fullName: BOOSEapp.ICanvas.DrawTo(int, int)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/ICanvas.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: DrawTo
+    path: ../ICanvas.cs
+    startLine: 29
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Draws a line from the current pen position to the specified coordinates.
+  example: []
+  syntax:
+    content: void DrawTo(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: The destination X-coordinate.
+    - id: y
+      type: System.Int32
+      description: The destination Y-coordinate.
+    content.vb: Sub DrawTo(x As Integer, y As Integer)
+  overload: BOOSEapp.ICanvas.DrawTo*
+  nameWithType.vb: ICanvas.DrawTo(Integer, Integer)
+  fullName.vb: BOOSEapp.ICanvas.DrawTo(Integer, Integer)
+  name.vb: DrawTo(Integer, Integer)
+- uid: BOOSEapp.ICanvas.DrawCircle(System.Int32)
+  commentId: M:BOOSEapp.ICanvas.DrawCircle(System.Int32)
+  id: DrawCircle(System.Int32)
+  parent: BOOSEapp.ICanvas
+  langs:
+  - csharp
+  - vb
+  name: DrawCircle(int)
+  nameWithType: ICanvas.DrawCircle(int)
+  fullName: BOOSEapp.ICanvas.DrawCircle(int)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/ICanvas.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: DrawCircle
+    path: ../ICanvas.cs
+    startLine: 35
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Draws a circle centered at the current pen position with the specified radius.
+  example: []
+  syntax:
+    content: void DrawCircle(int radius)
+    parameters:
+    - id: radius
+      type: System.Int32
+      description: The radius of the circle.
+    content.vb: Sub DrawCircle(radius As Integer)
+  overload: BOOSEapp.ICanvas.DrawCircle*
+  nameWithType.vb: ICanvas.DrawCircle(Integer)
+  fullName.vb: BOOSEapp.ICanvas.DrawCircle(Integer)
+  name.vb: DrawCircle(Integer)
+- uid: BOOSEapp.ICanvas.DrawRectangle(System.Int32,System.Int32)
+  commentId: M:BOOSEapp.ICanvas.DrawRectangle(System.Int32,System.Int32)
+  id: DrawRectangle(System.Int32,System.Int32)
+  parent: BOOSEapp.ICanvas
+  langs:
+  - csharp
+  - vb
+  name: DrawRectangle(int, int)
+  nameWithType: ICanvas.DrawRectangle(int, int)
+  fullName: BOOSEapp.ICanvas.DrawRectangle(int, int)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/ICanvas.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: DrawRectangle
+    path: ../ICanvas.cs
+    startLine: 42
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Draws a rectangle starting at the current pen position with the specified dimensions.
+  example: []
+  syntax:
+    content: void DrawRectangle(int width, int height)
+    parameters:
+    - id: width
+      type: System.Int32
+      description: The width of the rectangle.
+    - id: height
+      type: System.Int32
+      description: The height of the rectangle.
+    content.vb: Sub DrawRectangle(width As Integer, height As Integer)
+  overload: BOOSEapp.ICanvas.DrawRectangle*
+  nameWithType.vb: ICanvas.DrawRectangle(Integer, Integer)
+  fullName.vb: BOOSEapp.ICanvas.DrawRectangle(Integer, Integer)
+  name.vb: DrawRectangle(Integer, Integer)
+- uid: BOOSEapp.ICanvas.SetPenColor(System.Int32,System.Int32,System.Int32)
+  commentId: M:BOOSEapp.ICanvas.SetPenColor(System.Int32,System.Int32,System.Int32)
+  id: SetPenColor(System.Int32,System.Int32,System.Int32)
+  parent: BOOSEapp.ICanvas
+  langs:
+  - csharp
+  - vb
+  name: SetPenColor(int, int, int)
+  nameWithType: ICanvas.SetPenColor(int, int, int)
+  fullName: BOOSEapp.ICanvas.SetPenColor(int, int, int)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/ICanvas.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: SetPenColor
+    path: ../ICanvas.cs
+    startLine: 50
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Sets the pen color using RGB values.
+  example: []
+  syntax:
+    content: void SetPenColor(int r, int g, int b)
+    parameters:
+    - id: r
+      type: System.Int32
+      description: The red component (0–255).
+    - id: g
+      type: System.Int32
+      description: The green component (0–255).
+    - id: b
+      type: System.Int32
+      description: The blue component (0–255).
+    content.vb: Sub SetPenColor(r As Integer, g As Integer, b As Integer)
+  overload: BOOSEapp.ICanvas.SetPenColor*
+  nameWithType.vb: ICanvas.SetPenColor(Integer, Integer, Integer)
+  fullName.vb: BOOSEapp.ICanvas.SetPenColor(Integer, Integer, Integer)
+  name.vb: SetPenColor(Integer, Integer, Integer)
+- uid: BOOSEapp.ICanvas.WriteText(System.String)
+  commentId: M:BOOSEapp.ICanvas.WriteText(System.String)
+  id: WriteText(System.String)
+  parent: BOOSEapp.ICanvas
+  langs:
+  - csharp
+  - vb
+  name: WriteText(string)
+  nameWithType: ICanvas.WriteText(string)
+  fullName: BOOSEapp.ICanvas.WriteText(string)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/ICanvas.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: WriteText
+    path: ../ICanvas.cs
+    startLine: 56
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Writes the specified text at the current pen position.
+  example: []
+  syntax:
+    content: void WriteText(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The text to write.
+    content.vb: Sub WriteText(text As String)
+  overload: BOOSEapp.ICanvas.WriteText*
+  nameWithType.vb: ICanvas.WriteText(String)
+  fullName.vb: BOOSEapp.ICanvas.WriteText(String)
+  name.vb: WriteText(String)
+- uid: BOOSEapp.ICanvas.Clear
+  commentId: M:BOOSEapp.ICanvas.Clear
+  id: Clear
+  parent: BOOSEapp.ICanvas
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: ICanvas.Clear()
+  fullName: BOOSEapp.ICanvas.Clear()
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/ICanvas.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: Clear
+    path: ../ICanvas.cs
+    startLine: 61
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Clears the canvas and resets its drawing surface.
+  example: []
+  syntax:
+    content: void Clear()
+    content.vb: Sub Clear()
+  overload: BOOSEapp.ICanvas.Clear*
+- uid: BOOSEapp.ICanvas.GetBitmap
+  commentId: M:BOOSEapp.ICanvas.GetBitmap
+  id: GetBitmap
+  parent: BOOSEapp.ICanvas
+  langs:
+  - csharp
+  - vb
+  name: GetBitmap()
+  nameWithType: ICanvas.GetBitmap()
+  fullName: BOOSEapp.ICanvas.GetBitmap()
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/ICanvas.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: GetBitmap
+    path: ../ICanvas.cs
+    startLine: 67
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Gets a bitmap snapshot of the current canvas content.
+  example: []
+  syntax:
+    content: Bitmap GetBitmap()
+    return:
+      type: System.Drawing.Bitmap
+      description: A <xref href="System.Drawing.Bitmap" data-throw-if-not-resolved="false"></xref> that represents the current canvas.
+    content.vb: Function GetBitmap() As Bitmap
+  overload: BOOSEapp.ICanvas.GetBitmap*
+references:
+- uid: BOOSEapp
+  commentId: N:BOOSEapp
+  href: BOOSEapp.html
+  name: BOOSEapp
+  nameWithType: BOOSEapp
+  fullName: BOOSEapp
+- uid: BOOSEapp.ICanvas.Xpos*
+  commentId: Overload:BOOSEapp.ICanvas.Xpos
+  href: BOOSEapp.ICanvas.html#BOOSEapp_ICanvas_Xpos
+  name: Xpos
+  nameWithType: ICanvas.Xpos
+  fullName: BOOSEapp.ICanvas.Xpos
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSEapp.ICanvas.Ypos*
+  commentId: Overload:BOOSEapp.ICanvas.Ypos
+  href: BOOSEapp.ICanvas.html#BOOSEapp_ICanvas_Ypos
+  name: Ypos
+  nameWithType: ICanvas.Ypos
+  fullName: BOOSEapp.ICanvas.Ypos
+- uid: BOOSEapp.ICanvas.MoveTo*
+  commentId: Overload:BOOSEapp.ICanvas.MoveTo
+  href: BOOSEapp.ICanvas.html#BOOSEapp_ICanvas_MoveTo_System_Int32_System_Int32_
+  name: MoveTo
+  nameWithType: ICanvas.MoveTo
+  fullName: BOOSEapp.ICanvas.MoveTo
+- uid: BOOSEapp.ICanvas.DrawTo*
+  commentId: Overload:BOOSEapp.ICanvas.DrawTo
+  href: BOOSEapp.ICanvas.html#BOOSEapp_ICanvas_DrawTo_System_Int32_System_Int32_
+  name: DrawTo
+  nameWithType: ICanvas.DrawTo
+  fullName: BOOSEapp.ICanvas.DrawTo
+- uid: BOOSEapp.ICanvas.DrawCircle*
+  commentId: Overload:BOOSEapp.ICanvas.DrawCircle
+  href: BOOSEapp.ICanvas.html#BOOSEapp_ICanvas_DrawCircle_System_Int32_
+  name: DrawCircle
+  nameWithType: ICanvas.DrawCircle
+  fullName: BOOSEapp.ICanvas.DrawCircle
+- uid: BOOSEapp.ICanvas.DrawRectangle*
+  commentId: Overload:BOOSEapp.ICanvas.DrawRectangle
+  href: BOOSEapp.ICanvas.html#BOOSEapp_ICanvas_DrawRectangle_System_Int32_System_Int32_
+  name: DrawRectangle
+  nameWithType: ICanvas.DrawRectangle
+  fullName: BOOSEapp.ICanvas.DrawRectangle
+- uid: BOOSEapp.ICanvas.SetPenColor*
+  commentId: Overload:BOOSEapp.ICanvas.SetPenColor
+  href: BOOSEapp.ICanvas.html#BOOSEapp_ICanvas_SetPenColor_System_Int32_System_Int32_System_Int32_
+  name: SetPenColor
+  nameWithType: ICanvas.SetPenColor
+  fullName: BOOSEapp.ICanvas.SetPenColor
+- uid: BOOSEapp.ICanvas.WriteText*
+  commentId: Overload:BOOSEapp.ICanvas.WriteText
+  href: BOOSEapp.ICanvas.html#BOOSEapp_ICanvas_WriteText_System_String_
+  name: WriteText
+  nameWithType: ICanvas.WriteText
+  fullName: BOOSEapp.ICanvas.WriteText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BOOSEapp.ICanvas.Clear*
+  commentId: Overload:BOOSEapp.ICanvas.Clear
+  href: BOOSEapp.ICanvas.html#BOOSEapp_ICanvas_Clear
+  name: Clear
+  nameWithType: ICanvas.Clear
+  fullName: BOOSEapp.ICanvas.Clear
+- uid: System.Drawing.Bitmap
+  commentId: T:System.Drawing.Bitmap
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.bitmap
+  name: Bitmap
+  nameWithType: Bitmap
+  fullName: System.Drawing.Bitmap
+- uid: BOOSEapp.ICanvas.GetBitmap*
+  commentId: Overload:BOOSEapp.ICanvas.GetBitmap
+  href: BOOSEapp.ICanvas.html#BOOSEapp_ICanvas_GetBitmap
+  name: GetBitmap
+  nameWithType: ICanvas.GetBitmap
+  fullName: BOOSEapp.ICanvas.GetBitmap
+- uid: System.Drawing
+  commentId: N:System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Drawing
+  nameWithType: System.Drawing
+  fullName: System.Drawing
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing

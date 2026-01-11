@@ -1,0 +1,83 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEapp.ICommand
+  commentId: T:BOOSEapp.ICommand
+  id: ICommand
+  parent: BOOSEapp
+  children:
+  - BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)
+  langs:
+  - csharp
+  - vb
+  name: ICommand
+  nameWithType: ICommand
+  fullName: BOOSEapp.ICommand
+  type: Interface
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/ICommand.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: ICommand
+    path: ../ICommand.cs
+    startLine: 5
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Defines a command in the drawing program that follows the Command pattern to encapsulate a drawing operation.
+  example: []
+  syntax:
+    content: public interface ICommand
+    content.vb: Public Interface ICommand
+- uid: BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)
+  commentId: M:BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)
+  id: Execute(BOOSEapp.ICanvas)
+  parent: BOOSEapp.ICommand
+  langs:
+  - csharp
+  - vb
+  name: Execute(ICanvas)
+  nameWithType: ICommand.Execute(ICanvas)
+  fullName: BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/ICommand.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: Execute
+    path: ../ICommand.cs
+    startLine: 11
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Executes the command on the specified canvas.
+  example: []
+  syntax:
+    content: void Execute(ICanvas canvas)
+    parameters:
+    - id: canvas
+      type: BOOSEapp.ICanvas
+      description: The canvas on which to execute the command.
+    content.vb: Sub Execute(canvas As ICanvas)
+  overload: BOOSEapp.ICommand.Execute*
+references:
+- uid: BOOSEapp
+  commentId: N:BOOSEapp
+  href: BOOSEapp.html
+  name: BOOSEapp
+  nameWithType: BOOSEapp
+  fullName: BOOSEapp
+- uid: BOOSEapp.ICommand.Execute*
+  commentId: Overload:BOOSEapp.ICommand.Execute
+  href: BOOSEapp.ICommand.html#BOOSEapp_ICommand_Execute_BOOSEapp_ICanvas_
+  name: Execute
+  nameWithType: ICommand.Execute
+  fullName: BOOSEapp.ICommand.Execute
+- uid: BOOSEapp.ICanvas
+  commentId: T:BOOSEapp.ICanvas
+  parent: BOOSEapp
+  href: BOOSEapp.ICanvas.html
+  name: ICanvas
+  nameWithType: ICanvas
+  fullName: BOOSEapp.ICanvas

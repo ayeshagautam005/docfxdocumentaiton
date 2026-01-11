@@ -1,0 +1,425 @@
+{
+  "source_base_path": "C:/Users/suru2/source/repos/ase-boose-assignment-ayeshagautam0020/ase-boose-assignment-ayeshagautam005/BOOSEapp/BOOSEapp/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.AppArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.AppArray.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.AppArray",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.AppArray.yml\" sourcestartlinenumber=\"1\">Represents a command that handles array creation requests,\nsuch as <code>array int scores 10</code>, within the BOOSE application.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.AppCanvas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.AppCanvas.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.AppCanvas",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.AppCanvas.yml\" sourcestartlinenumber=\"1\">Represents a drawing surface that implements the <xref href=\"BOOSEapp.ICanvas\" data-throw-if-not-resolved=\"false\"></xref> interface.\nProvides methods for drawing shapes, lines, and text.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.AppCircle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.AppCircle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.AppCircle",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.AppCircle.yml\" sourcestartlinenumber=\"1\">Represents a command that draws a circle on a canvas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.AppCommandFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.AppCommandFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.AppCommandFactory",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.AppCommandFactory.yml\" sourcestartlinenumber=\"1\">Provides a singleton factory for creating <xref href=\"BOOSEapp.ICommand\" data-throw-if-not-resolved=\"false\"></xref> instances from text input.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.AppDrawTo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.AppDrawTo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.AppDrawTo",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.AppDrawTo.yml\" sourcestartlinenumber=\"1\">Represents a command that draws a line from the current canvas position to the specified coordinates.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.AppFor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.AppFor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.AppFor",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.AppFor.yml\" sourcestartlinenumber=\"1\">Represents a command that handles parsing and reporting of FOR loop constructs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.AppIf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.AppIf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.AppIf",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.AppIf.yml\" sourcestartlinenumber=\"1\">Represents a command that handles parsing and reporting of IF statement constructs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.AppInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.AppInt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.AppInt",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.AppInt.yml\" sourcestartlinenumber=\"1\">Represents a command that declares integer variables in the application context.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.AppMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.AppMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.AppMethod",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.AppMethod.yml\" sourcestartlinenumber=\"1\">Represents a command that handles parsing and reporting of method definitions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.AppMoveTo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.AppMoveTo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.AppMoveTo",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.AppMoveTo.yml\" sourcestartlinenumber=\"1\">Represents a command that moves the pen to the specified coordinates on the canvas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.AppParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.AppParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.AppParser",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.AppParser.yml\" sourcestartlinenumber=\"1\">Provides functionality to parse text lines into command objects using a command factory.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.AppReal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.AppReal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.AppReal",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.AppReal.yml\" sourcestartlinenumber=\"1\">Represents a command that declares real (floating-point) variables in the application context.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.AppRectangle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.AppRectangle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.AppRectangle",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.AppRectangle.yml\" sourcestartlinenumber=\"1\">Represents a command that draws a rectangle on the canvas using the specified dimensions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.AppWhile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.AppWhile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.AppWhile",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.AppWhile.yml\" sourcestartlinenumber=\"1\">Represents a command that handles parsing and reporting of WHILE loop constructs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.CanvasException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.CanvasException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.CanvasException",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.CanvasException.yml\" sourcestartlinenumber=\"1\">Represents errors that occur during canvas-related operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.ClearCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.ClearCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.ClearCommand",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.ClearCommand.yml\" sourcestartlinenumber=\"1\">Represents a command that clears the drawing canvas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.ICanvas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.ICanvas.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.ICanvas",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.ICanvas.yml\" sourcestartlinenumber=\"1\">Defines a contract for drawing operations on a canvas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.ICommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.ICommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.ICommand",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.ICommand.yml\" sourcestartlinenumber=\"1\">Defines a command in the drawing program that follows the Command pattern to encapsulate a drawing operation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.ICommandParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.ICommandParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.ICommandParser",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.ICommandParser.yml\" sourcestartlinenumber=\"1\">Defines a contract for parsing textual commands into executable command objects.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.MainForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.MainForm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.MainForm",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.MainForm.yml\" sourcestartlinenumber=\"1\">Main form for the BOOSE Drawing Application.\nThis form provides the user interface for entering drawing commands,\nexecuting them, and viewing the results on a drawing canvas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.MethodInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.MethodInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.MethodInfo",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.MethodInfo.yml\" sourcestartlinenumber=\"1\">Represents a method definition, including its name, parameters, body, and return variable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.ResetCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.ResetCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.ResetCommand",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.ResetCommand.yml\" sourcestartlinenumber=\"1\">Represents a command that resets the canvas state, including the pen position.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.SetPenColorCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.SetPenColorCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.SetPenColorCommand",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.SetPenColorCommand.yml\" sourcestartlinenumber=\"1\">Represents a command that sets the current pen color on the canvas using RGB components.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.WriteTextCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.WriteTextCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp.WriteTextCommand",
+      "Summary": "<p sourcefile=\"api/BOOSEapp.WriteTextCommand.yml\" sourcestartlinenumber=\"1\">Represents a command that writes text onto the canvas at the current pen position.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEapp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/BOOSEapp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEapp",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,466 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEapp.AppMethod
+  commentId: T:BOOSEapp.AppMethod
+  id: AppMethod
+  parent: BOOSEapp
+  children:
+  - BOOSEapp.AppMethod.#ctor(System.String)
+  - BOOSEapp.AppMethod.Execute(BOOSEapp.ICanvas)
+  - BOOSEapp.AppMethod.ToString
+  langs:
+  - csharp
+  - vb
+  name: AppMethod
+  nameWithType: AppMethod
+  fullName: BOOSEapp.AppMethod
+  type: Class
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/AppMethod.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: AppMethod
+    path: ../AppMethod.cs
+    startLine: 8
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Represents a command that handles parsing and reporting of method definitions.
+  example: []
+  syntax:
+    content: 'public class AppMethod : ICommand'
+    content.vb: Public Class AppMethod Implements ICommand
+  inheritance:
+  - System.Object
+  implements:
+  - BOOSEapp.ICommand
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: BOOSEapp.AppMethod.#ctor(System.String)
+  commentId: M:BOOSEapp.AppMethod.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: BOOSEapp.AppMethod
+  langs:
+  - csharp
+  - vb
+  name: AppMethod(string)
+  nameWithType: AppMethod.AppMethod(string)
+  fullName: BOOSEapp.AppMethod.AppMethod(string)
+  type: Constructor
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/AppMethod.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: .ctor
+    path: ../AppMethod.cs
+    startLine: 16
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Initializes a new instance of the <xref href="BOOSEapp.AppMethod" data-throw-if-not-resolved="false"></xref> class with the specified method definition text.
+  example: []
+  syntax:
+    content: public AppMethod(string commandLine)
+    parameters:
+    - id: commandLine
+      type: System.String
+      description: The textual representation of the method definition command.
+    content.vb: Public Sub New(commandLine As String)
+  overload: BOOSEapp.AppMethod.#ctor*
+  nameWithType.vb: AppMethod.New(String)
+  fullName.vb: BOOSEapp.AppMethod.New(String)
+  name.vb: New(String)
+- uid: BOOSEapp.AppMethod.Execute(BOOSEapp.ICanvas)
+  commentId: M:BOOSEapp.AppMethod.Execute(BOOSEapp.ICanvas)
+  id: Execute(BOOSEapp.ICanvas)
+  parent: BOOSEapp.AppMethod
+  langs:
+  - csharp
+  - vb
+  name: Execute(ICanvas)
+  nameWithType: AppMethod.Execute(ICanvas)
+  fullName: BOOSEapp.AppMethod.Execute(BOOSEapp.ICanvas)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/AppMethod.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: Execute
+    path: ../AppMethod.cs
+    startLine: 25
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Executes the method command by reporting the detected method definition to the main form output.
+  example: []
+  syntax:
+    content: public void Execute(ICanvas canvas)
+    parameters:
+    - id: canvas
+      type: BOOSEapp.ICanvas
+      description: The canvas associated with the current execution context. This parameter is not used.
+    content.vb: Public Sub Execute(canvas As ICanvas)
+  overload: BOOSEapp.AppMethod.Execute*
+  implements:
+  - BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)
+- uid: BOOSEapp.AppMethod.ToString
+  commentId: M:BOOSEapp.AppMethod.ToString
+  id: ToString
+  parent: BOOSEapp.AppMethod
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: AppMethod.ToString()
+  fullName: BOOSEapp.AppMethod.ToString()
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/AppMethod.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: ToString
+    path: ../AppMethod.cs
+    startLine: 38
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Returns a string that represents the current method command.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that describes the method command, including its original definition text.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: BOOSEapp.AppMethod.ToString*
+references:
+- uid: BOOSEapp
+  commentId: N:BOOSEapp
+  href: BOOSEapp.html
+  name: BOOSEapp
+  nameWithType: BOOSEapp
+  fullName: BOOSEapp
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BOOSEapp.ICommand
+  commentId: T:BOOSEapp.ICommand
+  parent: BOOSEapp
+  href: BOOSEapp.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: BOOSEapp.ICommand
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSEapp.AppMethod
+  commentId: T:BOOSEapp.AppMethod
+  href: BOOSEapp.AppMethod.html
+  name: AppMethod
+  nameWithType: AppMethod
+  fullName: BOOSEapp.AppMethod
+- uid: BOOSEapp.AppMethod.#ctor*
+  commentId: Overload:BOOSEapp.AppMethod.#ctor
+  href: BOOSEapp.AppMethod.html#BOOSEapp_AppMethod__ctor_System_String_
+  name: AppMethod
+  nameWithType: AppMethod.AppMethod
+  fullName: BOOSEapp.AppMethod.AppMethod
+  nameWithType.vb: AppMethod.New
+  fullName.vb: BOOSEapp.AppMethod.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BOOSEapp.AppMethod.Execute*
+  commentId: Overload:BOOSEapp.AppMethod.Execute
+  href: BOOSEapp.AppMethod.html#BOOSEapp_AppMethod_Execute_BOOSEapp_ICanvas_
+  name: Execute
+  nameWithType: AppMethod.Execute
+  fullName: BOOSEapp.AppMethod.Execute
+- uid: BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)
+  commentId: M:BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)
+  parent: BOOSEapp.ICommand
+  href: BOOSEapp.ICommand.html#BOOSEapp_ICommand_Execute_BOOSEapp_ICanvas_
+  name: Execute(ICanvas)
+  nameWithType: ICommand.Execute(ICanvas)
+  fullName: BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)
+  spec.csharp:
+  - uid: BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)
+    name: Execute
+    href: BOOSEapp.ICommand.html#BOOSEapp_ICommand_Execute_BOOSEapp_ICanvas_
+  - name: (
+  - uid: BOOSEapp.ICanvas
+    name: ICanvas
+    href: BOOSEapp.ICanvas.html
+  - name: )
+  spec.vb:
+  - uid: BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)
+    name: Execute
+    href: BOOSEapp.ICommand.html#BOOSEapp_ICommand_Execute_BOOSEapp_ICanvas_
+  - name: (
+  - uid: BOOSEapp.ICanvas
+    name: ICanvas
+    href: BOOSEapp.ICanvas.html
+  - name: )
+- uid: BOOSEapp.ICanvas
+  commentId: T:BOOSEapp.ICanvas
+  parent: BOOSEapp
+  href: BOOSEapp.ICanvas.html
+  name: ICanvas
+  nameWithType: ICanvas
+  fullName: BOOSEapp.ICanvas
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: BOOSEapp.AppMethod.ToString*
+  commentId: Overload:BOOSEapp.AppMethod.ToString
+  href: BOOSEapp.AppMethod.html#BOOSEapp_AppMethod_ToString
+  name: ToString
+  nameWithType: AppMethod.ToString
+  fullName: BOOSEapp.AppMethod.ToString

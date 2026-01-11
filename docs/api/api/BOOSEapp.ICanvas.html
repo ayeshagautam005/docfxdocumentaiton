@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface ICanvas | BOOSEapp Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface ICanvas | BOOSEapp Documentation ">
+      
+      <meta name="description" content="Defines a contract for drawing operations on a canvas.">
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/new/main/apiSpec/new?filename=BOOSEapp_ICanvas.md&amp;value=---%0Auid%3A%20BOOSEapp.ICanvas%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="BOOSEapp Docs">
+            BOOSEapp Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="BOOSEapp.ICanvas">
+
+
+
+  <h1 id="BOOSEapp_ICanvas" data-uid="BOOSEapp.ICanvas" class="text-break">
+Interface ICanvas  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/ICanvas.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BOOSEapp.html">BOOSEapp</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BOOSEapp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Defines a contract for drawing operations on a canvas.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ICanvas</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="BOOSEapp_ICanvas_Xpos_" data-uid="BOOSEapp.ICanvas.Xpos*"></a>
+
+  <h3 id="BOOSEapp_ICanvas_Xpos" data-uid="BOOSEapp.ICanvas.Xpos">
+  Xpos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/ICanvas.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current X-coordinate of the pen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Xpos { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_ICanvas_Ypos_" data-uid="BOOSEapp.ICanvas.Ypos*"></a>
+
+  <h3 id="BOOSEapp_ICanvas_Ypos" data-uid="BOOSEapp.ICanvas.Ypos">
+  Ypos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/ICanvas.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current Y-coordinate of the pen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Ypos { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="BOOSEapp_ICanvas_Clear_" data-uid="BOOSEapp.ICanvas.Clear*"></a>
+
+  <h3 id="BOOSEapp_ICanvas_Clear" data-uid="BOOSEapp.ICanvas.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/ICanvas.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the canvas and resets its drawing surface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_ICanvas_DrawCircle_" data-uid="BOOSEapp.ICanvas.DrawCircle*"></a>
+
+  <h3 id="BOOSEapp_ICanvas_DrawCircle_System_Int32_" data-uid="BOOSEapp.ICanvas.DrawCircle(System.Int32)">
+  DrawCircle(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/ICanvas.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a circle centered at the current pen position with the specified radius.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DrawCircle(int radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The radius of the circle.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_ICanvas_DrawRectangle_" data-uid="BOOSEapp.ICanvas.DrawRectangle*"></a>
+
+  <h3 id="BOOSEapp_ICanvas_DrawRectangle_System_Int32_System_Int32_" data-uid="BOOSEapp.ICanvas.DrawRectangle(System.Int32,System.Int32)">
+  DrawRectangle(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/ICanvas.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a rectangle starting at the current pen position with the specified dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DrawRectangle(int width, int height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width of the rectangle.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height of the rectangle.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_ICanvas_DrawTo_" data-uid="BOOSEapp.ICanvas.DrawTo*"></a>
+
+  <h3 id="BOOSEapp_ICanvas_DrawTo_System_Int32_System_Int32_" data-uid="BOOSEapp.ICanvas.DrawTo(System.Int32,System.Int32)">
+  DrawTo(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/ICanvas.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a line from the current pen position to the specified coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DrawTo(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The destination X-coordinate.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The destination Y-coordinate.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_ICanvas_GetBitmap_" data-uid="BOOSEapp.ICanvas.GetBitmap*"></a>
+
+  <h3 id="BOOSEapp_ICanvas_GetBitmap" data-uid="BOOSEapp.ICanvas.GetBitmap">
+  GetBitmap()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/ICanvas.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a bitmap snapshot of the current canvas content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Bitmap GetBitmap()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a> that represents the current canvas.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_ICanvas_MoveTo_" data-uid="BOOSEapp.ICanvas.MoveTo*"></a>
+
+  <h3 id="BOOSEapp_ICanvas_MoveTo_System_Int32_System_Int32_" data-uid="BOOSEapp.ICanvas.MoveTo(System.Int32,System.Int32)">
+  MoveTo(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/ICanvas.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves the pen to the specified coordinates without drawing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void MoveTo(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The X-coordinate to move the pen to.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The Y-coordinate to move the pen to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_ICanvas_SetPenColor_" data-uid="BOOSEapp.ICanvas.SetPenColor*"></a>
+
+  <h3 id="BOOSEapp_ICanvas_SetPenColor_System_Int32_System_Int32_System_Int32_" data-uid="BOOSEapp.ICanvas.SetPenColor(System.Int32,System.Int32,System.Int32)">
+  SetPenColor(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/ICanvas.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the pen color using RGB values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetPenColor(int r, int g, int b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The red component (0–255).</p>
+</dd>
+    <dt><code>g</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The green component (0–255).</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The blue component (0–255).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_ICanvas_WriteText_" data-uid="BOOSEapp.ICanvas.WriteText*"></a>
+
+  <h3 id="BOOSEapp_ICanvas_WriteText_System_String_" data-uid="BOOSEapp.ICanvas.WriteText(System.String)">
+  WriteText(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/ICanvas.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes the specified text at the current pen position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteText(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text to write.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/blob/main/BOOSEapp/BOOSEapp/ICanvas.cs/#L6" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Source on <a href="https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005/tree/main">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,499 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEapp.AppCircle
+  commentId: T:BOOSEapp.AppCircle
+  id: AppCircle
+  parent: BOOSEapp
+  children:
+  - BOOSEapp.AppCircle.#ctor(System.Int32)
+  - BOOSEapp.AppCircle.Execute(BOOSEapp.ICanvas)
+  - BOOSEapp.AppCircle.ToString
+  langs:
+  - csharp
+  - vb
+  name: AppCircle
+  nameWithType: AppCircle
+  fullName: BOOSEapp.AppCircle
+  type: Class
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/AppCircle.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: AppCircle
+    path: ../AppCircle.cs
+    startLine: 7
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Represents a command that draws a circle on a canvas.
+  example: []
+  syntax:
+    content: 'public class AppCircle : ICommand'
+    content.vb: Public Class AppCircle Implements ICommand
+  inheritance:
+  - System.Object
+  implements:
+  - BOOSEapp.ICommand
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: BOOSEapp.AppCircle.#ctor(System.Int32)
+  commentId: M:BOOSEapp.AppCircle.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: BOOSEapp.AppCircle
+  langs:
+  - csharp
+  - vb
+  name: AppCircle(int)
+  nameWithType: AppCircle.AppCircle(int)
+  fullName: BOOSEapp.AppCircle.AppCircle(int)
+  type: Constructor
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/AppCircle.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: .ctor
+    path: ../AppCircle.cs
+    startLine: 16
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Initializes a new instance of the <xref href="BOOSEapp.AppCircle" data-throw-if-not-resolved="false"></xref> class with the specified radius.
+  example: []
+  syntax:
+    content: public AppCircle(int radius)
+    parameters:
+    - id: radius
+      type: System.Int32
+      description: The radius of the circle to draw.
+    content.vb: Public Sub New(radius As Integer)
+  overload: BOOSEapp.AppCircle.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">radius</code> is less than or equal to zero.
+  nameWithType.vb: AppCircle.New(Integer)
+  fullName.vb: BOOSEapp.AppCircle.New(Integer)
+  name.vb: New(Integer)
+- uid: BOOSEapp.AppCircle.Execute(BOOSEapp.ICanvas)
+  commentId: M:BOOSEapp.AppCircle.Execute(BOOSEapp.ICanvas)
+  id: Execute(BOOSEapp.ICanvas)
+  parent: BOOSEapp.AppCircle
+  langs:
+  - csharp
+  - vb
+  name: Execute(ICanvas)
+  nameWithType: AppCircle.Execute(ICanvas)
+  fullName: BOOSEapp.AppCircle.Execute(BOOSEapp.ICanvas)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/AppCircle.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: Execute
+    path: ../AppCircle.cs
+    startLine: 29
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Executes the command by drawing a circle on the specified canvas.
+  example: []
+  syntax:
+    content: public void Execute(ICanvas canvas)
+    parameters:
+    - id: canvas
+      type: BOOSEapp.ICanvas
+      description: The canvas on which to draw the circle.
+    content.vb: Public Sub Execute(canvas As ICanvas)
+  overload: BOOSEapp.AppCircle.Execute*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">canvas</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  implements:
+  - BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)
+- uid: BOOSEapp.AppCircle.ToString
+  commentId: M:BOOSEapp.AppCircle.ToString
+  id: ToString
+  parent: BOOSEapp.AppCircle
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: AppCircle.ToString()
+  fullName: BOOSEapp.AppCircle.ToString()
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/BOOSEapp/AppCircle.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-ayeshagautam005.git
+    id: ToString
+    path: ../AppCircle.cs
+    startLine: 42
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Returns a string that represents the current circle command.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that describes the circle command, including its radius.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: BOOSEapp.AppCircle.ToString*
+references:
+- uid: BOOSEapp
+  commentId: N:BOOSEapp
+  href: BOOSEapp.html
+  name: BOOSEapp
+  nameWithType: BOOSEapp
+  fullName: BOOSEapp
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BOOSEapp.ICommand
+  commentId: T:BOOSEapp.ICommand
+  parent: BOOSEapp
+  href: BOOSEapp.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: BOOSEapp.ICommand
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSEapp.AppCircle
+  commentId: T:BOOSEapp.AppCircle
+  href: BOOSEapp.AppCircle.html
+  name: AppCircle
+  nameWithType: AppCircle
+  fullName: BOOSEapp.AppCircle
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: BOOSEapp.AppCircle.#ctor*
+  commentId: Overload:BOOSEapp.AppCircle.#ctor
+  href: BOOSEapp.AppCircle.html#BOOSEapp_AppCircle__ctor_System_Int32_
+  name: AppCircle
+  nameWithType: AppCircle.AppCircle
+  fullName: BOOSEapp.AppCircle.AppCircle
+  nameWithType.vb: AppCircle.New
+  fullName.vb: BOOSEapp.AppCircle.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: BOOSEapp.AppCircle.Execute*
+  commentId: Overload:BOOSEapp.AppCircle.Execute
+  href: BOOSEapp.AppCircle.html#BOOSEapp_AppCircle_Execute_BOOSEapp_ICanvas_
+  name: Execute
+  nameWithType: AppCircle.Execute
+  fullName: BOOSEapp.AppCircle.Execute
+- uid: BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)
+  commentId: M:BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)
+  parent: BOOSEapp.ICommand
+  href: BOOSEapp.ICommand.html#BOOSEapp_ICommand_Execute_BOOSEapp_ICanvas_
+  name: Execute(ICanvas)
+  nameWithType: ICommand.Execute(ICanvas)
+  fullName: BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)
+  spec.csharp:
+  - uid: BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)
+    name: Execute
+    href: BOOSEapp.ICommand.html#BOOSEapp_ICommand_Execute_BOOSEapp_ICanvas_
+  - name: (
+  - uid: BOOSEapp.ICanvas
+    name: ICanvas
+    href: BOOSEapp.ICanvas.html
+  - name: )
+  spec.vb:
+  - uid: BOOSEapp.ICommand.Execute(BOOSEapp.ICanvas)
+    name: Execute
+    href: BOOSEapp.ICommand.html#BOOSEapp_ICommand_Execute_BOOSEapp_ICanvas_
+  - name: (
+  - uid: BOOSEapp.ICanvas
+    name: ICanvas
+    href: BOOSEapp.ICanvas.html
+  - name: )
+- uid: BOOSEapp.ICanvas
+  commentId: T:BOOSEapp.ICanvas
+  parent: BOOSEapp
+  href: BOOSEapp.ICanvas.html
+  name: ICanvas
+  nameWithType: ICanvas
+  fullName: BOOSEapp.ICanvas
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: BOOSEapp.AppCircle.ToString*
+  commentId: Overload:BOOSEapp.AppCircle.ToString
+  href: BOOSEapp.AppCircle.html#BOOSEapp_AppCircle_ToString
+  name: ToString
+  nameWithType: AppCircle.ToString
+  fullName: BOOSEapp.AppCircle.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
