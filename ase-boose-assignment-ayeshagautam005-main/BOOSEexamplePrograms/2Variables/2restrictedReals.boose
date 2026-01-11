@@ -1,5 +1,0 @@
-﻿*demonstrate use of real values with no restriction violations
-pen 0,0,255
-real length = 15.5
-real width = 10.0
-write length * width
